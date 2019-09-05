@@ -8,11 +8,8 @@ plt.legend(['sin(x)', 'cos(x)'])
 plt.xlabel('x value from 0 to 2pi')
 
 y1 = np.tan(x)
-plt.plot(x,y,x,z,x,y1)
+plt.plot(x,y1)
 
-plt.xticks(np.linspace(0, 2*np.pi, 5), labels=("0", r"$\frac{1}{2}\pi$", r"$\pi$", r"$\frac{3}{2}\pi$", r"${2}\pi$"))
 plt.ylim(-10,10)
-plt.hlines(0, 0, 2*np.pi, linestyles="dashed", linewidth=0.5)
-
-plt.legend(labels=['sin(x)','cos(x)','tan(x)'])
+plt.legend(['sin(x)','cos(x)','tan(x)'])
 plt.show()
