@@ -6,3 +6,10 @@ z = np.cos(x)
 plt.plot(x,y,x,z)
 plt.legend(['sin(x)', 'cos(x)'])
 plt.xlabel('x value from 0 to 2pi')
+
+y1 = np.tan(x)
+plt.plot(x,y1)
+
+plt.ylim(-10,10)
+plt.legend(['sin(x)','cos(x)','tan(x)'])
+plt.show()
