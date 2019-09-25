@@ -1,7 +1,16 @@
 <html>
 <body>
-  <h2>This is a headline</h2>
-  <P>This is HTML</p>
-  <pre>This is pre</pre>
+  <h2>Hello {% condition %}
+    {% if html_name %}
+      {{html_name}}
+    {% else %}
+      World!
+    {% endif %}
+  </h2>
+<ol>
+  {% for item in list %}
+    <li> {{ item }}
+  {% endfor %}
+</ol> 
 </body>
 </html>
