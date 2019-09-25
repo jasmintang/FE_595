@@ -1,4 +1,5 @@
 from flask import Flask
+from flask import render_template
 app = Flask(__name__)
 
 
@@ -10,7 +11,7 @@ def hello_world():
     
 @app.route('/hello/<name>', methods = ['GET'])
 def hello_person(name):
-    return "Hello, {}!".format(name)
+    return render_template('hello.html', name=name)
     
     
 if __name__ == "__main__":
